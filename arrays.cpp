@@ -93,7 +93,7 @@ int main()
     // Array equality test
     int eqTest[] = {0,1,2,3,4,5,6,7,8};
     int eqTest2[] = {0,1,2,3,4,5,6,7,8};
-    int eqSize = *(&eqTest + 1) - eqTest;
+    int eqSize = *(&eqTest + 1) - eqTest; // Pointer hack to get size
     int eqSize2 = *(&eqTest2 + 1) - eqTest2;
     cout << "eqSize: " << eqSize << endl;
     cout << "*std::end(eqTest): " << *(std::end(eqTest) - 1) << endl;
